@@ -1,4 +1,5 @@
-Vue.component('task',{
+Vue.component('task',
+{
   props: ['data'],
   data() {
     return {
@@ -15,7 +16,7 @@ Vue.component('task',{
       <h3 class="task__title">{{data.title}}</h3>
       <p v-if="data.desc!=''" class="task__desc">{{data.desc}}</p>
     </div>
-    <button class="task__done" @click="task_done()">✔️</button>
+    <button class="task__done" @click="task_done()">Изменить ✔️</button>
   </div>`
 })
 
